@@ -3,3 +3,62 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* COLORS */
+:root {
+    --color-1: #e0e1dd;
+    --color-2: #778da9;
+    --color-3: #415a77;
+    --color-4: #1b263b;
+    --color-5: #0d1b2a;
+}
+
+
+.navbar {
+    font-size: 1.2rem;
+}
+.navbar-logo {
+    width: 100px;
+}
+.menu-bg {
+    background-color: var(--color-4) !important;
+}
+.hero-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('/assets/rfk-hero.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+.banner-content {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: var(--color-1);
+}
+.banner-heavy-text {
+    font-size: 5rem;
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+}
+.banner-soft-text {
+    font-size: 5rem;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+}
+
+/* -------------------- FOOTER SECTION -------------------- */
+.footer {
+    background-color: var(--color-3);
+}
+
+.footer-text {
+    font-size: 1.2rem;
+    color: #fff;
+}
