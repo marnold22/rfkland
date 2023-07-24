@@ -52,21 +52,103 @@
     padding: 0;
     margin: 0;
 }
+/* -------------------- ABOUT SECTION -------------------- */
+.about {
+    background-color: var(--color-1);
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    color: var(--color-5);
+}
+.about-hd {
+    font-size: 2.75rem;
+}
+.about-text {
+    font-size: 1.25rem;
+}
+.about-img {
+    width: 100%;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12) !important;
+}
 
-
-
-/* -------------------- MAP SECTION -------------------- */
-.map {
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('/assets/map.png') no-repeat center center;
+/* -------------------- QUOTE SECTION -------------------- */
+.quote {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('/assets/rfk-land.jpg') bottom center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 40vh;
 }
+.quote-text {
+    color: white;
+    font-size: 3rem;
+    font-weight: 300;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    margin: 0;
+}
+
+/* -------------------- MAP SECTION -------------------- */
+.contact {
+    /* background: linear-gradient(rgba(132, 169, 140, 0.85), rgba(132, 169, 140, 0.85)), url('/assets/map.png') no-repeat center center fixed; */
+    background-color: var(--color-2);
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+.contact-hd {
+    font-size: 2.75rem;
+    color: var(--color-5);
+}
+
+input.form-control,
+textarea.form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--color-5);
+}
+
+textarea.form-control:focus,
+input.form-control:focus {
+    box-shadow: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--color-5);
+}
+
+.contact-btn {
+    background-color: var(--color-5);
+    border: none;
+}
+
+.contact-btn:hover {
+    background-color: var(--color-4);
+}
+
+.contact-btn:focus,
+.contact-btn:active {
+    background-color: var(--color-5);
+}
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--color-4);
+    opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--color-4);
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--color-4);
+}
+
+
 /* -------------------- FOOTER SECTION -------------------- */
 .footer {
-    background-color: var(--color-3);
+    background-color: var(--color-4);
 }
 
 .footer-text {
