@@ -63,7 +63,7 @@
     font-size: 2.75rem;
 }
 .about-text {
-    font-size: 1.25rem;
+    font-size: 1.45rem;
 }
 .about-img {
     width: 100%;
@@ -90,7 +90,7 @@
 /* -------------------- CONTACT SECTION -------------------- */
 .contact {
     /* background: linear-gradient(rgba(132, 169, 140, 0.85), rgba(132, 169, 140, 0.85)), url('/assets/map.png') no-repeat center center fixed; */
-    background-color: var(--color-2);
+    background-color: var(--color-1);
     /* -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -155,3 +155,5 @@ input.form-control:focus {
     font-size: 1.2rem;
     color: #fff;
 }
+
+/* -------------------- MEDIA QUERIES -------------------- */
