@@ -1,10 +1,11 @@
+/* -------------------- DEFAULTS -------------------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* COLORS */
+/* -------------------- COLORS -------------------- */
 :root {
     --color-1: #cad2c5;
     --color-2: #84a98c;
@@ -13,16 +14,19 @@
     --color-5: #2f3e46;
 }
 
-
+/* -------------------- HOME & NAVBAR SECTION -------------------- */
 .navbar {
     font-size: 1.2rem;
 }
+
 .navbar-logo {
     width: 100px;
 }
+
 .menu-bg {
     background-color: var(--color-4) !important;
 }
+
 .hero-banner {
     background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('/assets/rfk-hero.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -31,6 +35,7 @@
     background-size: cover;
     height: 100vh;
 }
+
 .banner-content {
     margin: 0;
     position: absolute;
@@ -40,18 +45,33 @@
     transform: translate(-50%, -50%);
     color: var(--color-1);
 }
+
 .banner-heavy-text {
     font-size: 5rem;
     font-weight: 800;
     padding: 0;
     margin: 0;
 }
+
 .banner-soft-text {
     font-size: 5rem;
     font-weight: 100;
     padding: 0;
     margin: 0;
 }
+
+.start-btn {
+    background-color: var(--color-3);
+    border: none;
+    transition: all .3s ease-in-out;
+}
+
+.start-btn:hover {
+    background-color: var(--color-2);
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
+}
+
 /* -------------------- ABOUT SECTION -------------------- */
 .about {
     background-color: var(--color-1);
@@ -59,22 +79,25 @@
     padding-bottom: 7rem;
     color: var(--color-5);
 }
+
 .about-hd {
     font-size: 2.75rem;
 }
+
 .about-text {
-    font-size: 1.45rem;
+    font-size: 1.3rem;
 }
+
 .about-img {
     width: 100%;
     transition: all .3s ease-in-out;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12) !important;
 }
+
 .about-img:hover {
     transition: all .3s ease-in-out;
     transform: scale(1.02);
 }
-
 
 /* -------------------- QUOTE SECTION -------------------- */
 .quote {
@@ -84,6 +107,7 @@
     -o-background-size: cover;
     background-size: cover;
 }
+
 .quote-text {
     color: white;
     font-size: 3rem;
@@ -95,15 +119,43 @@
 
 /* -------------------- CONTACT SECTION -------------------- */
 .contact {
-    /* background: linear-gradient(rgba(132, 169, 140, 0.85), rgba(132, 169, 140, 0.85)), url('/assets/map.png') no-repeat center center fixed; */
     background-color: var(--color-1);
-    /* -webkit-background-size: cover;
+    /* padding-top: 3rem;
+    padding-bottom: 3rem; */
+}
+
+.contact .row {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.left {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/assets/map.png') no-repeat center center;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover; */
-    padding-top: 3rem;
-    padding-bottom: 5rem;
+    background-size: cover;
+    border-radius: .375rem;
 }
+
+.right {
+    background-color: var(--color-1);
+}
+
+.scaler {
+    transition: all .3s ease-in-out;
+}
+.scaler:hover {
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.contact-padding {
+    padding-top: 8rem;
+}
+
 .contact-hd {
     font-size: 2.75rem;
     color: var(--color-5);
@@ -138,22 +190,27 @@ input.form-control:focus {
     background-color: var(--color-5);
 }
 
-.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: var(--color-4);
-    opacity: 1; /* Firefox */
+    opacity: 1;
+    /* Firefox */
 }
 
-.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
     color: var(--color-4);
 }
 
-.form-control::-ms-input-placeholder { /* Microsoft Edge */
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
     color: var(--color-4);
 }
+
 .icon-text {
-    color: var(--color-5);
+    color: var(--color-1);
+    font-size: 1.2rem;
 }
-
 
 /* -------------------- FOOTER SECTION -------------------- */
 .footer {
@@ -166,3 +223,70 @@ input.form-control:focus {
 }
 
 /* -------------------- MEDIA QUERIES -------------------- */
+/* XXL */
+@media screen and (max-width:1400px) {}
+
+/* XL */
+@media screen and (max-width:1200px) {
+    .about-text {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+/* LG */
+@media screen and (max-width:992px) {
+    .about-text {
+        font-size: 1.18rem;
+        text-align: center;
+    }
+    .contact-padding {
+        padding-top: 7rem;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .about {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .contact-padding {
+        padding-top: 5rem;
+    }
+    
+}
+
+/* MD */
+@media screen and (max-width:768px) {
+    .banner-soft-text {
+        font-size: 3rem;
+    }
+    .about-text {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .contact {
+        padding-top: 0;
+    }
+    .contact-padding {
+        padding-top: 1.5rem;
+    }
+    .spacer {
+        padding-bottom: 1.2rem;
+    }
+    .icon-text {
+        font-size: 1rem;
+    }
+}
+
+/* SM */
+@media screen and (max-width:576px) {
+
+}
+
+/* FIX FOR OFFCANVAS NAVBAR */
+@media screen and (max-width: 425px) {
+    .offcanvas {
+        --bs-offcanvas-width: 300px !important;
+    }
+}
